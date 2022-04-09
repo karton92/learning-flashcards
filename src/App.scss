@@ -1,0 +1,15 @@
+@use "./styles/" as *;
+
+.app-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+
+body {
+  font-size: $font-size;
+  width: 100vw;
+  min-height: 100vh;
+}

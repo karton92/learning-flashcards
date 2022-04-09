@@ -1,0 +1,56 @@
+{
+  "javascript": [
+    {
+      "id": 1,
+      "title": "Co to są promise?",
+      "body": "Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+    },
+    {
+      "id": 2,
+      "title": "Co to jest asynchroniczność?",
+      "body": "Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+    },
+    {
+      "id": 3,
+      "title": "Jakie są różnice między map, a forEach?",
+      "body": "Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+    },
+    {
+      "id": 4,
+      "title": "Ile typów prostych występuje w JavaScript?",
+      "body": "Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+    },
+    {
+      "id": 5,
+      "title": "Co to jest literal string?",
+      "body": "Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+    }
+  ],
+  "css": [
+    {
+      "id": 1,
+      "title": "Co to jest CSS?",
+      "body": "Dupa blada, kurna nie wiem"
+    },
+    {
+      "id": 2,
+      "title": "Co to jest asynchroniczność?",
+      "body": "Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+    },
+    {
+      "id": 3,
+      "title": "Jakie są różnice między map, a forEach?",
+      "body": "Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+    },
+    {
+      "id": 4,
+      "title": "Ile typów prostych występuje w JavaScript?",
+      "body": "Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+    },
+    {
+      "id": 5,
+      "title": "Co to jest literal string?",
+      "body": "Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+    }
+  ]
+}
