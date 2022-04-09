@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/karton92/learning-flashcards/static/css/main.3a658ca7.css",
-    "main.js": "/karton92/learning-flashcards/static/js/main.b0e7248e.js",
-    "static/media/css_icon.png": "/karton92/learning-flashcards/static/media/css_icon.d7768ba0141a33d057b7.png",
-    "static/media/html_icon.png": "/karton92/learning-flashcards/static/media/html_icon.eb48d4b05b09c0200bbf.png",
-    "static/media/react_icon.png": "/karton92/learning-flashcards/static/media/react_icon.b053fdf3203ff2d4b963.png",
-    "index.html": "/karton92/learning-flashcards/index.html",
-    "main.3a658ca7.css.map": "/karton92/learning-flashcards/static/css/main.3a658ca7.css.map",
-    "main.b0e7248e.js.map": "/karton92/learning-flashcards/static/js/main.b0e7248e.js.map"
+    "main.css": "/learning-flashcards/static/css/main.3a658ca7.css",
+    "main.js": "/learning-flashcards/static/js/main.86e3a47f.js",
+    "static/media/css_icon.png": "/learning-flashcards/static/media/css_icon.d7768ba0141a33d057b7.png",
+    "static/media/html_icon.png": "/learning-flashcards/static/media/html_icon.eb48d4b05b09c0200bbf.png",
+    "static/media/react_icon.png": "/learning-flashcards/static/media/react_icon.b053fdf3203ff2d4b963.png",
+    "index.html": "/learning-flashcards/index.html",
+    "main.3a658ca7.css.map": "/learning-flashcards/static/css/main.3a658ca7.css.map",
+    "main.86e3a47f.js.map": "/learning-flashcards/static/js/main.86e3a47f.js.map"
   },
   "entrypoints": [
     "static/css/main.3a658ca7.css",
-    "static/js/main.b0e7248e.js"
+    "static/js/main.86e3a47f.js"
   ]
 }
