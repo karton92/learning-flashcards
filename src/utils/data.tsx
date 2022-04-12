@@ -9,7 +9,7 @@ export const data = {
     {
       id: 2,
       title: "Co to jest asynchroniczność?",
-      body: "Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
+      body: "Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium. Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium. Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium. Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium kropka",
       type: "Javascript",
     },
     {
@@ -40,13 +40,13 @@ export const data = {
     },
     {
       id: 2,
-      title: "Co to jest asynchroniczność?",
+      title: "Co są pseudo-klasy?",
       body: "Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
       type: "CSS",
     },
     {
       id: 3,
-      title: "Jakie są różnice między map, a forEach?",
+      title: "Co to jest SASS?",
       body: "Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
       type: "CSS",
     },
@@ -59,6 +59,48 @@ export const data = {
     {
       id: 5,
       title: "Co to jest literal string?",
+      body: "Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
+      type: "CSS",
+    },
+    {
+      id: 6,
+      title: "Co to jest hover?",
+      body: "Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
+      type: "CSS",
+    },
+    {
+      id: 7,
+      title: "Jakie mamy jednostki miary w CSS i czym się od siebie różnią",
+      body: "Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
+      type: "CSS",
+    },
+    {
+      id: 8,
+      title: "Jaka jest różnica między after, a befor?",
+      body: "Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
+      type: "CSS",
+    },
+    {
+      id: 9,
+      title: "Co to jest flexbox?",
+      body: "Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
+      type: "CSS",
+    },
+    {
+      id: 10,
+      title: "Co to jest flexbox?",
+      body: "Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
+      type: "CSS",
+    },
+    {
+      id: 11,
+      title: "Co to jest flexbox?",
+      body: "Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
+      type: "CSS",
+    },
+    {
+      id: 12,
+      title: "Co to jest flexbox?",
       body: "Audantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
       type: "CSS",
     },

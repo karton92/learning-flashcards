@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { FlashcardItem, FlashcardsListProps } from "../types/types";
 import { listButtons } from "../utils/data";
 import Button from "./Button";
-import "./List.scss";
+import "./QuestionsList.scss";
 
-const List = ({
+const QuestionsList = ({
   data,
   cardType,
   setCardType,
@@ -77,4 +77,4 @@ const List = ({
   );
 };
 
-export default List;
+export default QuestionsList;

@@ -21,16 +21,20 @@
 }
 
 .card {
-  position: absolute;
-  left: -200px;
   width: 400px;
-  max-width: 80vw;
   height: 90vh;
+  max-height: 90vh;
+  margin: 20px;
   perspective: 1000px;
   transition: transform 0.5s;
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
+  @media (max-width: 650px) {
+    order: 2;
+    max-width: 80vw;
+    max-height: 80vh;
+  }
 }
 
 //BOTH CARD SIDE
@@ -51,15 +55,15 @@
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  padding: 40px;
+  padding: 20px;
 
   img {
     position: absolute;
     top: 35%;
     display: block;
     justify-self: center;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     background-color: $light;
     border: 5px solid #fff;
@@ -78,6 +82,9 @@
     color: $font-color-light;
     font-size: 26px;
     margin: 10px 0;
+    @media (max-width: 376px) {
+      font-size: 20px;
+    }
   }
 }
 
@@ -89,10 +96,14 @@
   // CARD HEADER
   .card-header {
     display: flex;
+    justify-content: center;
     align-items: center;
     position: relative;
     padding: 0 20px;
     height: 140px;
+    @media (max-width: 376px) {
+      padding: 0;
+    }
     &:after {
       content: "";
       display: block;
@@ -113,6 +124,14 @@
       border: 5px solid #fff;
       object-fit: fill;
       margin: 10px;
+      @media (max-width: 426px) {
+        width: 80px;
+        height: 80px;
+      }
+      @media (max-width: 321px) {
+        width: 60px;
+        height: 60px;
+      }
     }
 
     h2 {
@@ -121,13 +140,24 @@
       font-weight: 900;
       text-transform: uppercase;
       text-align: center;
+      @media (max-width: 769px) {
+        font-size: 28px;
+      }
+      @media (max-width: 321px) {
+        font-size: 24px;
+      }
     }
   }
 
   //CARD BODY
   .card-body {
     padding: 10px;
-
+    height: 65vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    @media (max-width: 426px) {
+      height: 55vh;
+    }
     h3 {
       color: $font-color-dark;
       font-size: 24px;
