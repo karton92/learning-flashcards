@@ -1,8 +1,20 @@
 /*
+    object-assign
+    (c) Sindre Sorhus
+    @license MIT
+    */
+
+/*
 object-assign
 (c) Sindre Sorhus
 @license MIT
 */
+
+/** @license MUI v5.6.0
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 
 /** @license React v0.20.2
  * scheduler.production.min.js
