@@ -1,3 +1,4 @@
+<img src="/view.png" alt="Site view" width="70%">
 <h2>Learning Flashcards App</h2>
 
 _Welcome to my profile!<br>
