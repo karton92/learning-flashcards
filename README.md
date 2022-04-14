@@ -30,9 +30,10 @@ _Below is how install and setting up app._
 3. SCSS<br>
 4. RWD<br>
 5. Hooks<br>
-6. Optimization Care<br>
+6. Material UI<br>
+7. Optimization Care<br>
 <br>
 <h2>In future:</h2>
-7. Redux Toolkit<br>
-8. Arrow navigation<br>
+8. Redux Toolkit<br>
+9. Arrow navigation<br>
 
