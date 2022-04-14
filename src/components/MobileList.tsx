@@ -21,7 +21,7 @@ const MobileList = ({
   });
   const anchor = "top";
 
-  const toggleDrawer = (anchor: any, open: any) => (event: any) => {
+  const toggleDrawer = (anchor: string, open: boolean) => (event: any) => {
     if (
       event &&
       event.type === "keydown" &&
@@ -33,7 +33,7 @@ const MobileList = ({
     setState({ ...state, [anchor]: open });
   };
 
-  const list = (anchor: any) => (
+  const list = (anchor: string) => (
     <Box
       className="mobile-box"
       sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
