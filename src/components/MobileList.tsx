@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
-import List from "@mui/material/List";
 import { FlashcardsListProps } from "../types/types";
 import QuestionsList from "./QuestionsList";
 import "./MobileList.scss";
@@ -66,7 +65,6 @@ const MobileList = ({
             anchor={anchor}
             open={state[anchor]}
             onClose={toggleDrawer(anchor, false)}
-            // onOpen={toggleDrawer(anchor, true)}
           >
             {list(anchor)}
           </Drawer>

@@ -100,9 +100,10 @@
     align-items: center;
     position: relative;
     padding: 0 20px;
-    height: 140px;
+    height: 130px;
     @media (max-width: 376px) {
       padding: 0;
+      height: 110px;
     }
     &:after {
       content: "";
@@ -143,7 +144,7 @@
       @media (max-width: 769px) {
         font-size: 28px;
       }
-      @media (max-width: 321px) {
+      @media (max-width: 376px) {
         font-size: 24px;
       }
     }
@@ -155,6 +156,7 @@
     height: 65vh;
     overflow-y: auto;
     overflow-x: hidden;
+    margin-top: 2px;
     @media (max-width: 426px) {
       height: 55vh;
     }
@@ -171,6 +173,24 @@
       line-height: 1.2;
       text-align: justify;
       margin: 0 15px;
+    }
+
+    .code-example {
+      text-align: left;
+    }
+    &::-webkit-scrollbar {
+      width: 5px;
+      border: none;
+    }
+
+    &::-webkit-scrollbar-track {
+      overflow: hidden;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgb(164, 163, 163);
+      outline: 5px solid rgba(0, 0, 0, 0);
+      border-radius: 8px;
     }
   }
 }

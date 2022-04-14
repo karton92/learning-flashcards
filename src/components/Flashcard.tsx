@@ -56,7 +56,7 @@ function Flashcard({ isFlipped, setFlipped, card, cardType }: FlashcardsProps) {
           </div>
           <div className="card-body">
             <h3>{card.title}</h3>
-            <p>{card.body}</p>
+            <>{card.body}</>
           </div>
         </div>
       </div>

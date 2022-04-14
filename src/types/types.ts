@@ -1,7 +1,7 @@
 export type FlashcardItem = {
   id: number;
   title: string;
-  body: string;
+  body: JSX.Element;
   type: string;
 };
 
