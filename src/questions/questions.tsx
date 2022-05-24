@@ -496,57 +496,58 @@ export const data = {
     },
     {
       id: 8,
-      title: "Co to są jednostki em i rem w CSS?",
+      title: "Przykłady właściwości @media innej niż screen?",
       body: (
-        <p>
-          Jednostki miary wielkości em i rem w css, używa się do ustawiania wielkości cziconki.
-          <br />
-          <br />
-          - em stanowi odniesienie do wielkości czcionki rodzica.
-          <br />
-          <br />- rem stanowi odniesienie do wielkości czcionki dokumentu głównego (roota, którym najczęściej jest znacznik html).
-        </p>
+        <>
+          <p>Są cztery typy właściwości dla @media (włączając w to screen):</p>
+          <ul>
+            <li>
+              <strong>all</strong> - dla wszystkich typu media
+            </li>
+            <li>
+              <strong>print</strong> - dla drukarek
+            </li>
+            <li>
+              <strong>speech</strong> - lub czytników ekranu, które "czytają" stronę na głos
+            </li>
+            <li>
+              <strong>screen</strong> - do ekranów komputerowych, tabletów, smartfonów itp.
+            </li>
+          </ul>
+        </>
       ),
       type: "CSS",
     },
     {
       id: 9,
-      title: "Przykłady właściwości @media innej niż screen?",
-      body: (
-        <p>
-          Są cztery typy właściwości dla @media (włączając w to screen): <br />
-          <br />- <strong>all</strong> - dla wszystkich typu media
-          <br />- <strong>print</strong> - dla drukarek
-          <br />- <strong>speech</strong> - lub czytników ekranu, które "czytają" stronę na głos
-          <br />- <strong>screen</strong> - do ekranów komputerowych, tabletów, smartfonów itp.
-          <br />
-        </p>
-      ),
-      type: "CSS",
-    },
-    {
-      id: 10,
       title: "Jaka jest różnica między pozycjonowaniem relative, fixed, absolute i static elementu?",
       body: (
-        <p>
-          Element pozycjonowany to element, którego obliczona właściwość position jest albo relative, absolute, fixed lub sticky.
-          <br />
-          <br />
-          <br />- <strong>static</strong> - Pozycja domyślna; element wpłynie na stronę w normalny sposób. Właściwości top, right, bottom, left i
-          z-index nie mają zastosowania. <br />
-          <br />- <strong>relative</strong> - Pozycja elementu jest dopasowywana względem siebie, bez zmiany układu (i tym samym pozostawiając odstęp
-          dla elementu, w którym byłby, gdyby nie został ustawiony).
-          <br />
-          <br />- <strong>absolute</strong> - Element jest usuwany z przepływu strony i ustawiany w określonej pozycji względem najbliższego
-          umieszczonego przodka, jeśli taki istnieje, lub w inny sposób względem początkowego bloku zawierającego. Pola absolutnie pozycjonowane mogą
-          mieć marginesy i nie zwijają się z żadnymi innymi marginesami. Te elementy nie wpływają na pozycję innych elementów.
-          <br />
-          <br />- <strong>fixed</strong> - Element jest usuwany z przepływu strony i ustawiany w określonej pozycji względem viewport i nie porusza
-          się podczas przewijania.
-          <br />
-          <br />- <strong>sticky</strong> - Pozycjonowanie sticky to hybryda pozycjonowania względnego i ustalonego. Element jest traktowany jako
-          pozycja relative, dopóki nie przekroczy określonego progu, w którym to momencie jest traktowany jako pozycja fixed.
-        </p>
+        <>
+          <p>Element pozycjonowany to element, którego obliczona właściwość position jest albo relative, absolute, fixed lub sticky.</p>
+          <ul>
+            <li>
+              <strong>static</strong> - Pozycja domyślna; element wpłynie na stronę w normalny sposób. Właściwości top, right, bottom, left i z-index
+              nie mają zastosowania.
+            </li>
+            <li>
+              <strong>relative</strong> - Pozycja elementu jest dopasowywana względem siebie, bez zmiany układu (i tym samym pozostawiając odstęp dla
+              elementu, w którym byłby, gdyby nie został ustawiony).
+            </li>
+            <li>
+              <strong>absolute</strong> - Element jest usuwany z przepływu strony i ustawiany w określonej pozycji względem najbliższego umieszczonego
+              przodka, jeśli taki istnieje, lub w inny sposób względem początkowego bloku zawierającego. Pola absolutnie pozycjonowane mogą mieć
+              marginesy i nie zwijają się z żadnymi innymi marginesami. Te elementy nie wpływają na pozycję innych elementów.
+            </li>
+            <li>
+              <strong>fixed</strong> - Element jest usuwany z przepływu strony i ustawiany w określonej pozycji względem viewport i nie porusza się
+              podczas przewijania.
+            </li>
+            <li>
+              <strong>sticky</strong> - Pozycjonowanie sticky to hybryda pozycjonowania względnego i ustalonego. Element jest traktowany jako pozycja
+              relative, dopóki nie przekroczy określonego progu, w którym to momencie jest traktowany jako pozycja fixed.
+            </li>
+          </ul>
+        </>
       ),
       type: "CSS",
     },
@@ -556,15 +557,17 @@ export const data = {
       id: 1,
       title: "Czym jest HTML?",
       body: (
-        <p>
-          HTML (Hypertext Markup Language) jest to kod używany do tworzenia struktury strony i jej zawartości. Na przykład treść może być
-          uporządkowana w obrębie zestawu akapitów, listy punktowanych punktów lub tabel obrazów i danych.
-          <br />
-          <br />
-          HTML nie jest językiem programowania; jest językiem znaczników (ang. markup language). HTML składa się z serii znaczników (tagów), których
-          używa się do zamknięcia, opakowania różnych części treści, tak aby wyglądały i/lub działały w określony sposób. Z pomocą tagów możesz ze
-          słów czy obrazów zrobić linki do innych stron, sprawić by były napisane kursywą, większą czcionką, wytłuścić je itd.
-        </p>
+        <>
+          <p>
+            HTML (Hypertext Markup Language) jest to kod używany do tworzenia struktury strony i jej zawartości. Na przykład treść może być
+            uporządkowana w obrębie zestawu akapitów, listy punktowanych punktów lub tabel obrazów i danych.
+          </p>
+          <p>
+            HTML nie jest językiem programowania; jest językiem znaczników (ang. markup language). HTML składa się z serii znaczników (tagów), których
+            używa się do zamknięcia, opakowania różnych części treści, tak aby wyglądały i/lub działały w określony sposób. Z pomocą tagów możesz ze
+            słów czy obrazów zrobić linki do innych stron, sprawić by były napisane kursywą, większą czcionką, wytłuścić je itd.
+          </p>
+        </>
       ),
       type: "HTML",
     },
@@ -572,11 +575,13 @@ export const data = {
       id: 2,
       title: "Czym różni się znacznik header od h1",
       body: (
-        <p>
-          Header jest to jeden ze znaczników semantycznych, za jego pomocą możemy utworzyć nagłówek. Który np. ma w sobie h1 a pod sobą np. imię,
-          nazwisko i datę. Można też w nim umieścić. Nawigacje. Natomiast h1 jak i inne znaczniki h1-h6 służą do tworzenia nagłówka do jakiegoś tekstu
-          np. tytuł artykułu, lub sekcji.
-        </p>
+        <>
+          <p>
+            Header jest to jeden ze znaczników semantycznych, za jego pomocą możemy utworzyć nagłówek. Który np. ma w sobie h1 a pod sobą np. imię,
+            nazwisko i datę. Można też w nim umieścić. Nawigacje. Natomiast h1 jak i inne znaczniki h1-h6 służą do tworzenia nagłówka do jakiegoś
+            tekstu np. tytuł artykułu, lub sekcji.
+          </p>
+        </>
       ),
       type: "HTML",
     },
@@ -584,33 +589,42 @@ export const data = {
       id: 3,
       title: "Do czego służy znacznik main?",
       body: (
-        <p>
-          Według MDN jest to znacznik, który służy do umieszczenia głównej części strony. Powinien być tylko jeden taki znacznik na stronie (chociaż
-          były o to spory to miedzy dwoma specyfikacjami, niestety nie mam żadnego źródła, jeśli znasz dodaj w komentarzu).
-        </p>
+        <>
+          <p>
+            Według MDN jest to znacznik, który służy do umieszczenia głównej części strony. Powinien być tylko jeden taki znacznik na stronie (chociaż
+            były o to spory to miedzy dwoma specyfikacjami, niestety nie mam żadnego źródła, jeśli znasz dodaj w komentarzu).
+          </p>
+        </>
       ),
       type: "HTML",
     },
     {
       id: 4,
       title: "Wymień 3 nowe tagi w HTML5",
-      body: <p>Oto kilka: section, article, header, footer, main, video, audio, strong</p>,
+      body: (
+        <>
+          <p>Oto kilka: section, article, header, footer, main, video, audio, strong</p>
+        </>
+      ),
       type: "HTML",
     },
     {
       id: 5,
       title: "Jak jest różnica między div a span?",
       body: (
-        <p>
-          Div to element blokowy, którego szerokość wynosi 100% natomiast tag span jest to element inline który można np. wstawić wewnątrz tekstu.
-          Będzie się on zachować jak tekst, czyli można np. zapisać:
+        <>
+          <p>
+            Div to element blokowy, którego szerokość wynosi 100% natomiast tag span jest to element inline który można np. wstawić wewnątrz tekstu.
+            Będzie się on zachować jak tekst, czyli można np. zapisać:
+          </p>
           <code>
-            foo <span>bar</span> baz
+            foo <span style={{ color: "red", fontWeight: "800" }}>bar</span> baz
           </code>
-          <br />
-          <br />
-          Będzie to jedna linia, tak jakby elementu span nie było, można go jednak ostylować inaczej nadając mu np. kolor za pomocą CSS.
-        </p>
+          <p>
+            Będzie to jedna linia, tak jakby elementu span nie było, można go jednak ostylować inaczej nadając mu np. kolor czerwony i zwiększając
+            font-weight za pomocą CSS.
+          </p>
+        </>
       ),
       type: "HTML",
     },
@@ -618,10 +632,12 @@ export const data = {
       id: 6,
       title: "Wymień 5 technologii występujących w HTML5",
       body: (
-        <p>
-          Canvas, WebGL, History API, Storage, Drag & Drop, content editable, Wysyłanie wiadomości (czyli postMessage i zdarzenie message), tagi audio
-          i video. API które nie wchodzą do specyfikacji HTML5 to m.in. GEO Lokalizacja, WebRTC czy obsługa plików (File API, Directory API).
-        </p>
+        <>
+          <p>
+            Canvas, WebGL, History API, Storage, Drag & Drop, content editable, Wysyłanie wiadomości (czyli postMessage i zdarzenie message), tagi
+            audio i video. API które nie wchodzą do specyfikacji HTML5 to m.in. GEO Lokalizacja, WebRTC czy obsługa plików (File API, Directory API).
+          </p>
+        </>
       ),
       type: "HTML",
     },
@@ -629,10 +645,16 @@ export const data = {
       id: 7,
       title: "Czym się różni ol od ul?",
       body: (
-        <p>
-          - <strong>ol</strong> - ordered list - to lista z numerami
-          <br />- <strong>ul</strong> - unordered list - to lista puntów
-        </p>
+        <>
+          <ul>
+            <li>
+              <strong>ol</strong> - ordered list - to lista z numerami
+            </li>
+            <li>
+              <strong>ul</strong> - unordered list - to lista puntów
+            </li>
+          </ul>
+        </>
       ),
       type: "HTML",
     },
@@ -640,10 +662,12 @@ export const data = {
       id: 8,
       title: "Do czego służy atrybut role?",
       body: (
-        <p>
-          Jest to znacznik, który określa znaczenie elementu. Głównie do celów dostępności (ang. accessibility). Jest częścią specyfikacji ARIA.
-          Został też dodany do HTML5.
-        </p>
+        <>
+          <p>
+            Jest to znacznik, który określa znaczenie elementu. Głównie do celów dostępności (ang. accessibility). Jest częścią specyfikacji ARIA.
+            Został też dodany do HTML5.
+          </p>
+        </>
       ),
       type: "HTML",
     },
@@ -651,18 +675,24 @@ export const data = {
       id: 9,
       title: "Do czego służy atrybut role?",
       body: (
-        <p>
-          Do html można dodawać dowolne atrybuty, przeglądarki nie będą miały z nimi problemu. Ale aby być jednak zgodnym z HTML5, należy użyć
-          atrybutu data-nazwa="wartość". Taki atrybut można potem pobrać za pomocą element.dataset.nazwa. (Zadziała też starszy, działający w każdej
-          przeglądarce, getAttribute).
-        </p>
+        <>
+          <p>
+            Do html można dodawać dowolne atrybuty, przeglądarki nie będą miały z nimi problemu. Ale aby być jednak zgodnym z HTML5, należy użyć
+            atrybutu data-nazwa="wartość". Taki atrybut można potem pobrać za pomocą element.dataset.nazwa. (Zadziała też starszy, działający w każdej
+            przeglądarce, getAttribute).
+          </p>
+        </>
       ),
       type: "HTML",
     },
     {
       id: 10,
       title: "Jak ograniczyć liczbę znaków w polu tekstowym?",
-      body: <p>Służy do tego atrybut maxlength. wystarczy np. ustawić maxlength="100".</p>,
+      body: (
+        <>
+          <p>Służy do tego atrybut maxlength. wystarczy np. ustawić maxlength="100".</p>
+        </>
+      ),
       type: "HTML",
     },
   ],
@@ -671,18 +701,20 @@ export const data = {
       id: 1,
       title: "Czy framework i biblioteka to to samo?",
       body: (
-        <p>
-          Biblioteka to zestaw funkcji i klas, które dotyczą konkretnego zagadnienia i problemu, a programista może wykorzystywać je w swoim kodzie.
-          <br />
-          <br />
-          Framework (platforma programistyczna) – jest to szkielet do budowy aplikacji, który dostarcza niezbędne biblioteki i komponenty oraz
-          definiuje strukturę i działanie danej aplikacji. Dzięki frameworkom tworzenie aplikacji staje się bardziej efektywne (mniej kodu do
-          napisania), a sam kod jest wyższej jakości. Za wadę można uznać ich złożoność, przez co opanowanie ich działania nie jest łatwe.
-          <br />
-          <br />
-          Zarówno biblioteki jak i frameworki są tylko i wyłącznie narzędziami, które trzeba dobierać w zależności od potrzeb w danym projekcie.
-          Tworząc aplikacje bardzo często korzysta się z frameworka oraz wielu bibliotek.
-        </p>
+        <>
+          <p>
+            Biblioteka to zestaw funkcji i klas, które dotyczą konkretnego zagadnienia i problemu, a programista może wykorzystywać je w swoim kodzie.
+          </p>
+          <p>
+            Framework (platforma programistyczna) – jest to szkielet do budowy aplikacji, który dostarcza niezbędne biblioteki i komponenty oraz
+            definiuje strukturę i działanie danej aplikacji. Dzięki frameworkom tworzenie aplikacji staje się bardziej efektywne (mniej kodu do
+            napisania), a sam kod jest wyższej jakości. Za wadę można uznać ich złożoność, przez co opanowanie ich działania nie jest łatwe.
+          </p>
+          <p>
+            Zarówno biblioteki jak i frameworki są tylko i wyłącznie narzędziami, które trzeba dobierać w zależności od potrzeb w danym projekcie.
+            Tworząc aplikacje bardzo często korzysta się z frameworka oraz wielu bibliotek.
+          </p>
+        </>
       ),
       type: "React",
     },
@@ -690,20 +722,22 @@ export const data = {
       id: 2,
       title: "Czym jest React?",
       body: (
-        <p>
-          React jest tak zwaną biblioteką języka programowania JavaScript. Wykorzystuje się ją podczas tworzenia interfejsów użytkownika dla różnego
-          typu aplikacji. Dostępna jest dla szerokiego grona odbiorców na zasadzie open source. Dzięki niej można stworzyć bardzo złożony interfejs,
-          składający się z małych, oddzielonych od siebie elementów (komponentów).
-          <br />
-          <br />
-          Warto podkreślić, że React JS został stworzony przez Jordana Walke – pracownika Facebooka, któremu przyświecała idea uproszczenia procesu
-          budowania całego interfejsu oraz zapewnienie użytkownikom większej wygody podczas obsługi aplikacji.
-          <br />
-          <br />
-          Biblioteka React wykorzystuje nowoczesny sposób renderowania stron internetowych. Dzięki temu stają się one bardziej dynamiczne. Sprawia to,
-          że framework ten stanowi niezwykle innowacyjne podejście w programowaniu. Jest wygodny zarówno dla samego twórcy – programisty, jak i dla
-          końcowego użytkownika, czyli odbiorcy aplikacji.
-        </p>
+        <>
+          <p>
+            React jest tak zwaną biblioteką języka programowania JavaScript. Wykorzystuje się ją podczas tworzenia interfejsów użytkownika dla różnego
+            typu aplikacji. Dostępna jest dla szerokiego grona odbiorców na zasadzie open source. Dzięki niej można stworzyć bardzo złożony interfejs,
+            składający się z małych, oddzielonych od siebie elementów (komponentów).
+          </p>
+          <p>
+            Warto podkreślić, że React JS został stworzony przez Jordana Walke – pracownika Facebooka, któremu przyświecała idea uproszczenia procesu
+            budowania całego interfejsu oraz zapewnienie użytkownikom większej wygody podczas obsługi aplikacji.
+          </p>
+          <p>
+            Biblioteka React wykorzystuje nowoczesny sposób renderowania stron internetowych. Dzięki temu stają się one bardziej dynamiczne. Sprawia
+            to, że framework ten stanowi niezwykle innowacyjne podejście w programowaniu. Jest wygodny zarówno dla samego twórcy – programisty, jak i
+            dla końcowego użytkownika, czyli odbiorcy aplikacji.
+          </p>
+        </>
       ),
       type: "React",
     },
@@ -711,17 +745,18 @@ export const data = {
       id: 3,
       title: "Co są propsy?",
       body: (
-        <p>
-          Props to obiekt, zawierający wszystkie atrybuty JSX, <strong>przekazane do instancji komponentu dziecka przez rodzica</strong>
-          . Komponenty wykorzystują props podobnie jak elementy HTML wykorzystują atrybuty. Props pozwala na opisanie szczegółów implementacyjnych
-          danej instancji komponentu. Dzięki temu możemy pozbyć się jawnego wskazywania tych szczegółów w jego definicji i wpisywania danych na
-          sztywno.
-          <br />
-          <br />
-          Dzięki propsom <strong>komponenty zyskują wszechstronność i są zdatne do wielokrotnego użytku.</strong> Do props możemy przekazać dowolną,
-          poprawną wartością JS. Liczby, obiekty, tablice, wartości boolean, funkcje etc. Komponenty mają znacznie szerszy wachlarz możliwości niż
-          elementy HTML, ograniczające się wyłącznie do stringów.
-        </p>
+        <>
+          <p>
+            Props to obiekt, zawierający wszystkie atrybuty JSX, <strong>przekazane do instancji komponentu dziecka przez rodzica</strong>. Komponenty
+            wykorzystują props podobnie jak elementy HTML wykorzystują atrybuty. Props pozwala na opisanie szczegółów implementacyjnych danej
+            instancji komponentu. Dzięki temu możemy pozbyć się jawnego wskazywania tych szczegółów w jego definicji i wpisywania danych na sztywno.
+          </p>
+          <p>
+            Dzięki propsom <strong>komponenty zyskują wszechstronność i są zdatne do wielokrotnego użytku.</strong> Do props możemy przekazać dowolną,
+            poprawną wartością JS. Liczby, obiekty, tablice, wartości boolean, funkcje etc. Komponenty mają znacznie szerszy wachlarz możliwości niż
+            elementy HTML, ograniczające się wyłącznie do stringów.
+          </p>
+        </>
       ),
       type: "React",
     },
@@ -729,17 +764,17 @@ export const data = {
       id: 4,
       title: "Do czego służy state?",
       body: (
-        <p>
-          State służy do zarządzania stanem aplikacji, a więc{" "}
-          <strong>jest to miejsce, w którym przechowujemy różnego rodzaju informacje na temat aplikacji.</strong>
-          <br />
-          <br />
-          State umożliwia renderowanie danych w komponentach, dzięki czemu można np. uzyskać informacje na temat czy dany element został kliknięty,
-          czy strona się załadowała lub czy zaktualizować treść w aplikacji.
-          <br />
-          <br />
-          Oczywiście jeśli zaimplementujemy daną funkcjonalność, ponieważ state to tylko dane.
-        </p>
+        <>
+          <p>
+            State służy do zarządzania stanem aplikacji, a więc{" "}
+            <strong>jest to miejsce, w którym przechowujemy różnego rodzaju informacje na temat aplikacji.</strong>
+          </p>
+          <p>
+            State umożliwia renderowanie danych w komponentach, dzięki czemu można np. uzyskać informacje na temat czy dany element został kliknięty,
+            czy strona się załadowała lub czy zaktualizować treść w aplikacji.
+          </p>
+          <p>Oczywiście jeśli zaimplementujemy daną funkcjonalność, ponieważ state to tylko dane.</p>
+        </>
       ),
       type: "React",
     },
@@ -747,18 +782,20 @@ export const data = {
       id: 5,
       title: "Co to jest komponent w React?",
       body: (
-        <p>
-          Komponent to funkcja, która zwraca i wyświetla nam pewną część aplikacji. Tworzenie ich to podstawowa czynność w React. Wszystko sprowadza
-          się do podzielenia aplikacji na małe komponenty.
-          <br />
-          <br />
-          Dzielenie kodu na komponenty ułatwia pracę programiście oraz zmniejsza koszty utrzymania aplikacji. Tworząc re-używalne komponenty można
-          wykorzystać je w innych częściach programu.
-          <br />
-          <br />
-          Jeśli będzie potrzeba zmienić coś w danym komponencie to zmiana zostanie wykonana tylko jeden raz zamiast w X miejscach. Czas wykonania
-          będzie krótszy, a programiście będzie łatwiej zapanować nad kodem
-        </p>
+        <>
+          <p>
+            Komponent to funkcja, która zwraca i wyświetla nam pewną część aplikacji. Tworzenie ich to podstawowa czynność w React. Wszystko sprowadza
+            się do podzielenia aplikacji na małe komponenty.
+          </p>
+          <p>
+            Dzielenie kodu na komponenty ułatwia pracę programiście oraz zmniejsza koszty utrzymania aplikacji. Tworząc re-używalne komponenty można
+            wykorzystać je w innych częściach programu.
+          </p>
+          <p>
+            Jeśli będzie potrzeba zmienić coś w danym komponencie to zmiana zostanie wykonana tylko jeden raz zamiast w X miejscach. Czas wykonania
+            będzie krótszy, a programiście będzie łatwiej zapanować nad kodem
+          </p>
+        </>
       ),
       type: "React",
     },
@@ -766,13 +803,13 @@ export const data = {
       id: 6,
       title: "Co to są Hooki?",
       body: (
-        <p>
-          Hooki są to funkcje, które pozwalają „zahaczyć się” w mechanizmy stanu i cyklu życia Reacta, z wewnątrz komponentów funkcyjnych. Hooki nie
-          działają w klasach — zamiast tego pozwalają korzystać z Reacta bez klas.
-          <br />
-          <br />
-          Hooki są nowym dodatkiem w Reakcie 16.8. Pozwalają one używać stanu i innych funkcjonalności Reacta, bez użycia klas.
-        </p>
+        <>
+          <p>
+            Hooki są to funkcje, które pozwalają „zahaczyć się” w mechanizmy stanu i cyklu życia Reacta, z wewnątrz komponentów funkcyjnych. Hooki nie
+            działają w klasach — zamiast tego pozwalają korzystać z Reacta bez klas.
+          </p>
+          <p>Hooki są nowym dodatkiem w Reakcie 16.8. Pozwalają one używać stanu i innych funkcjonalności Reacta, bez użycia klas.</p>
+        </>
       ),
       type: "React",
     },
@@ -780,13 +817,13 @@ export const data = {
       id: 7,
       title: "Co to są komponenty wyższego rzędu?",
       body: (
-        <p>
-          Komponenty wyższego rzędu (ang. Higher Order Component - HOC) - zasada ich tworzenia jest podobna do funkcji wyższego rzędu. Komponenty tego
-          typu do funkcje, które przyjmują komponenty jako argument oraz zwracają nowy argument.
-          <br />
-          <br />
-          Przykładem może być funkcja connect z biblioteki Redux.
-        </p>
+        <>
+          <p>
+            Komponenty wyższego rzędu (ang. Higher Order Component - HOC) - zasada ich tworzenia jest podobna do funkcji wyższego rzędu. Komponenty
+            tego typu do funkcje, które przyjmują komponenty jako argument oraz zwracają nowy argument.
+          </p>
+          <p>Przykładem może być funkcja connect z biblioteki Redux.</p>
+        </>
       ),
       type: "React",
     },
@@ -794,14 +831,17 @@ export const data = {
       id: 8,
       title: "Jak działa JSX?",
       body: (
-        <p>
-          Kompilator JSX, np. Babel parsuje kod JavaScript (JSX), znajduje wszystkie odwołania do tagów html i zastępuje je wywołaniem funkcji
-          React.createElement lub w przypadku, gdy nazwa tagu jest z dużej litery, kompilator używa zmiennej komponentu.
-          <br />
-          <br />Z JSX nie korzysta tylko React, ale także inne frameworki. Takie jak np. Preact, które mogą korzystać z innej funkcji do tworzenia
-          elementów w wynikowym kodzie JavaScript, dlatego np. Babel posiada dyrektywę, za pomocą której można np. zmienić domyślny
-          React.createElement na funkcje h, z której korzysta Preact.
-        </p>
+        <>
+          <p>
+            Kompilator JSX, np. Babel parsuje kod JavaScript (JSX), znajduje wszystkie odwołania do tagów html i zastępuje je wywołaniem funkcji
+            React.createElement lub w przypadku, gdy nazwa tagu jest z dużej litery, kompilator używa zmiennej komponentu.
+          </p>
+          <p>
+            Z JSX nie korzysta tylko React, ale także inne frameworki. Takie jak np. Preact, które mogą korzystać z innej funkcji do tworzenia
+            elementów w wynikowym kodzie JavaScript, dlatego np. Babel posiada dyrektywę, za pomocą której można np. zmienić domyślny
+            React.createElement na funkcje h, z której korzysta Preact.
+          </p>
+        </>
       ),
       type: "React",
     },
@@ -809,42 +849,38 @@ export const data = {
       id: 9,
       title: "Omów cykl życia komponentu w React",
       body: (
-        <p>
-          Komponent w React może być w 3 stanach
-          <br />
-          <br />
-          1. <strong>Montowania</strong> - komponent jest dodany do drzewa DOM wywoływane są funkcje:
-          <br />
-          - constructor()
-          <br />
-          - componentWillMount()
-          <br />
-          - render()
-          <br />
-          - componentDidMount()
-          <br />
-          <br />
-          2. <strong>Update-u</strong> - zmiana właściwości (ang. props) powoduje, że powinien zmienić swój stan wywoływane są funkcje:
-          <br />
-          - componentWillReceiveProps()
-          <br />
-          - shouldComponentUpdate()
-          <br />
-          - componentWillUpdate()
-          <br />
-          - render()
-          <br />
-          - componentDidUpdate()
-          <br />
-          <br />
-          3. <strong>Odmontowywania</strong> - komponent jest usuwany z drzewa DOM wywoływana jest funkcja:
-          <br />
-          - componentWillUnmount()
-          <br />
-          <br />
-          Dodatkowo jest jeszcze jedna funkcja dodana w React 16 - componentDidCatch, który wywołuje się, gdy w funkcji render zostanie wyrzucony
-          wyjątek, niestety nie działa razem z funkcjami obsługi zdarzeń.
-        </p>
+        <>
+          <p>Komponent w React może być w 3 stanach:</p>
+          <p>
+            1. <strong>Montowania</strong> - komponent jest dodany do drzewa DOM wywoływane są funkcje:
+          </p>
+          <ul>
+            <li>constructor()</li>
+            <li>componentWillMount()</li>
+            <li>render()</li>
+            <li>componentDidMount()</li>
+          </ul>
+          <p>
+            2. <strong>Update-u</strong> - zmiana właściwości (ang. props) powoduje, że powinien zmienić swój stan wywoływane są funkcje:
+          </p>
+          <ul>
+            <li>componentWillReceiveProps()</li>
+            <li>shouldComponentUpdate()</li>
+            <li>componentWillUpdate()</li>
+            <li>render()</li>
+            <li>componentDidUpdate()</li>
+          </ul>
+          <p>
+            3. <strong>Odmontowywania</strong> - komponent jest usuwany z drzewa DOM wywoływana jest funkcja:
+          </p>
+          <ul>
+            <li>componentWillUnmount()</li>
+          </ul>
+          <p>
+            Dodatkowo jest jeszcze jedna funkcja dodana w React 16 - componentDidCatch, który wywołuje się, gdy w funkcji render zostanie wyrzucony
+            wyjątek, niestety nie działa razem z funkcjami obsługi zdarzeń.
+          </p>
+        </>
       ),
       type: "React",
     },
@@ -852,13 +888,14 @@ export const data = {
       id: 10,
       title: "Co to jest Flux i jaka jest różnica między Flux, a Redux?",
       body: (
-        <p>
-          Flux jest to architektura aplikacji zaproponowana przez Facebook-a, twórcy frameworka React.js. Flux nie jest to konkretna biblioteka ale
-          architektura, której głównym elementem jest funkcja Dispatcher, A całość używa architektury podobnej do Publish/Subscribe lub EventEmitter.
-          Flux korzysta z jedno kierunkowego przepływu danych w celu utrzymywania stanu aplikacji.
-          <br />
-          <br />I o ile Flux jest to nazwa architektury to Redux jest to już biblioteka, która implementuje ją tą.
-        </p>
+        <>
+          <p>
+            Flux jest to architektura aplikacji zaproponowana przez Facebook-a, twórcy frameworka React.js. Flux nie jest to konkretna biblioteka ale
+            architektura, której głównym elementem jest funkcja Dispatcher, A całość używa architektury podobnej do Publish/Subscribe lub
+            EventEmitter. Flux korzysta z jedno kierunkowego przepływu danych w celu utrzymywania stanu aplikacji.
+          </p>
+          <p>I o ile Flux jest to nazwa architektury to Redux jest to już biblioteka, która implementuje ją tą.</p>
+        </>
       ),
       type: "React",
     },
@@ -866,10 +903,8 @@ export const data = {
       id: 11,
       title: "Jak działa Redux?",
       body: (
-        <p>
-          Biblioteka ta składa się z takich elementów jak Stan aplikacji (ang. store), reducer-y oraz akcje (actions).
-          <br />
-          <br />
+        <>
+          <p>Biblioteka ta składa się z takich elementów jak Stan aplikacji (ang. store), reducer-y oraz akcje (actions).</p>
           <ul>
             <li>Reducer jest to funkcja, która zwraca nowy stan bazując na starym. Przyjmuje dwa argumenty, poprzedni stan oraz akcje,</li>
             <li>Akcje są to obiekty, które zostają przekazane do reducer-a, na podstawie ich typu powinien być zwrócony inny nowy stan aplikacji</li>
@@ -881,16 +916,15 @@ export const data = {
               - dispatch - do funkcji przekazujemy akcje i zostanie zmieniony stan <br />
             </li>
           </ul>
-          <br />
-          <br />
-          Biblioteka działa niezależnie od jakiegokolwiek frameworka. Można jej np. używać z Angular-em. Aby użyć biblioteki razem z React-em, należy
-          dodatkowo użyć biblioteki ReactRedux oraz użyć jej dwóch funkcji connect oraz Provider.
-          <br />
-          <br />
-          Provider jest to komponent, który posiada właściwość o nazwie store, który udostępnia stan aplikacji komponentom, działa tak jak
-          ErrorBoundary (tzn. że Provider to komponent, który opakowuje inne komponenty) i korzysta z Context API React-a. Natomiast funkcja connect,
-          służy jako wrapper komponentów. Przekazuje się do niej dwie funkcje: <br />
-          <br />
+          <p>
+            Biblioteka działa niezależnie od jakiegokolwiek frameworka. Można jej np. używać z Angular-em. Aby użyć biblioteki razem z React-em,
+            należy dodatkowo użyć biblioteki ReactRedux oraz użyć jej dwóch funkcji connect oraz Provider.
+          </p>
+          <p>
+            <strong>Provider</strong> jest to komponent, który posiada właściwość o nazwie store, który udostępnia stan aplikacji komponentom, działa
+            tak jak ErrorBoundary (tzn. że Provider to komponent, który opakowuje inne komponenty) i korzysta z Context API React-a. Natomiast funkcja
+            connect, służy jako wrapper komponentów. Przekazuje się do niej dwie funkcje:
+          </p>
           <ul>
             <li>mapStateToProps - jest to funkcja, która dostaje jako argument, stan aplikacji i zwraca obiekt bazujący na stanie</li>
             <li>
@@ -898,14 +932,15 @@ export const data = {
               odpowiednimi akcjami czyli dodają funkcje zmiany stanu aplikacji.
             </li>
           </ul>
-          <br />
-          <br />
-          Funkcja connect, jest to komponent wyższego poziomu czyli jest to funkcja która przyjmuje zwykły komponent i zwraca nowy komponent, który ma
-          dostęp do stanu z Reduxa, poprzez dwie funkcje:
-          <br />
-          - mapStateToProps
-          <br />- mapDispatchToProps
-        </p>
+          <p>
+            <strong>Funkcja connect</strong>, jest to komponent wyższego poziomu czyli jest to funkcja która przyjmuje zwykły komponent i zwraca nowy
+            komponent, który ma dostęp do stanu z Reduxa, poprzez dwie funkcje:
+          </p>
+          <ul>
+            <li>mapStateToProps</li>
+            <li>mapDispatchToProps</li>
+          </ul>
+        </>
       ),
       type: "React",
     },
@@ -913,19 +948,21 @@ export const data = {
       id: 12,
       title: "Co to jest Flux i jaka jest różnica między Flux, a Redux?",
       body: (
-        <p>
-          Context API oraz Redux, który w nowszej wersji korzysta z Context API, można używać do zminimalizowania wielokrotnego dziedziczenia propsów
-          (Nazwane po angielsku prop drilling albo threading), gdy jest potrzeba utrzymywania stanu w aplikacji w wielu komponentach. Context API
-          umożliwia stworzenie lokalnego stanu, który będzie dziedziczony przez inne komponenty w drzewie, pomijając komponenty, które go nie
-          potrzebują. Dlatego właśnie z został użyty w bibliotece Redux. Działa tak jak zasięg funkcyjny (ang. scope), wszystkie funkcje wewnątrz mają
-          dostęp do wszystkich zasięgów powyżej.
-          <br />
-          <br />
-          Context API udostępnia funkcje React.createContext, która tworzy obiekt z dwoma komponentami: obiekt.Provider oraz obiekt.Consumer.
-          Przykładem niech będzie przypadek, gdy musimy dodać internacjonalizacje do naszej aplikacji i wszystkie buttony muszą mieć przetłumaczony
-          text. Nasze przyciski znajdują się na różnym poziomie w drzewie DOM. Zakładając, że nie korzystamy z Reduxa, bez Context Api musielibyśmy
-          przekazywać propsy z językiem do każdego komponentu, aby dostał go każdy przycisk. Za pomocą Context API można to uprościć:
-        </p>
+        <>
+          <p>
+            Context API oraz Redux, który w nowszej wersji korzysta z Context API, można używać do zminimalizowania wielokrotnego dziedziczenia
+            propsów (Nazwane po angielsku prop drilling albo threading), gdy jest potrzeba utrzymywania stanu w aplikacji w wielu komponentach.
+            Context API umożliwia stworzenie lokalnego stanu, który będzie dziedziczony przez inne komponenty w drzewie, pomijając komponenty, które
+            go nie potrzebują. Dlatego właśnie z został użyty w bibliotece Redux. Działa tak jak zasięg funkcyjny (ang. scope), wszystkie funkcje
+            wewnątrz mają dostęp do wszystkich zasięgów powyżej.
+          </p>
+          <p>
+            Context API udostępnia funkcje React.createContext, która tworzy obiekt z dwoma komponentami: obiekt.Provider oraz obiekt.Consumer.
+            Przykładem niech będzie przypadek, gdy musimy dodać internacjonalizacje do naszej aplikacji i wszystkie buttony muszą mieć przetłumaczony
+            text. Nasze przyciski znajdują się na różnym poziomie w drzewie DOM. Zakładając, że nie korzystamy z Reduxa, bez Context Api musielibyśmy
+            przekazywać propsy z językiem do każdego komponentu, aby dostał go każdy przycisk. Za pomocą Context API można to uprościć:
+          </p>
+        </>
       ),
       type: "React",
     },
@@ -933,17 +970,19 @@ export const data = {
       id: 13,
       title: "Co to są kontrolowane komponenty?",
       body: (
-        <p>
-          Są to komponenty np. elementy formularzy input, select lub textarea, których wartość (właściwość value) pochodzi od React-a dlatego, gdy ich
-          stan się zmieni wyrenderują się ponownie z nowych stanem (oczywiście dzięki Virtual DOM nie zostanie utworzony nowy element tylko zmieni się
-          jego właściwość value). Jest to realizowane w taki sposób że pod value jest np. wartość ze state a event np. onChange lub onKeyUp zmienia
-          ten stan.
-          <br />
-          <br />
-          Kontrolowane mogą być także własne komponenty, gdzie wartość komponentu pobierana jest z zewnątrz np. z propsów. Komponent nie koniecznie
-          musi renderować się od nowa po zmianie stanu. Może także uaktualnić się w inny sposób, np. gdy jest to komponent opakowujący jakąś
-          bibliotekę.
-        </p>
+        <>
+          <p>
+            Są to komponenty np. elementy formularzy input, select lub textarea, których wartość (właściwość value) pochodzi od React-a dlatego, gdy
+            ich stan się zmieni wyrenderują się ponownie z nowych stanem (oczywiście dzięki Virtual DOM nie zostanie utworzony nowy element tylko
+            zmieni się jego właściwość value). Jest to realizowane w taki sposób że pod value jest np. wartość ze state a event np. onChange lub
+            onKeyUp zmienia ten stan.
+          </p>
+          <p>
+            Kontrolowane mogą być także własne komponenty, gdzie wartość komponentu pobierana jest z zewnątrz np. z propsów. Komponent nie koniecznie
+            musi renderować się od nowa po zmianie stanu. Może także uaktualnić się w inny sposób, np. gdy jest to komponent opakowujący jakąś
+            bibliotekę.
+          </p>
+        </>
       ),
       type: "React",
     },
@@ -951,14 +990,16 @@ export const data = {
       id: 14,
       title: "Jak działa Wirtualny DOM?",
       body: (
-        <p>
-          Wirtualny DOM jest to reprezentacja (w pamięci) prawdziwego drzewa DOM. Operacje wykonywane są na Wirtualnym DOM i gdy coś się zmieni,
-          wykonywane jest porównywanie drzew (ang. diff), a następnie najmniejsza liczba akcji potrzebna do tego aby oba drzewa były takie same.
-          <br />
-          <br />
-          Algorytm, który używa React w celu uaktualnienia natywnego DOM, nazywany jest po angielsku reconciliation, co można przetłumaczyć jako
-          pojednanie.
-        </p>
+        <>
+          <p>
+            Wirtualny DOM jest to reprezentacja (w pamięci) prawdziwego drzewa DOM. Operacje wykonywane są na Wirtualnym DOM i gdy coś się zmieni,
+            wykonywane jest porównywanie drzew (ang. diff), a następnie najmniejsza liczba akcji potrzebna do tego aby oba drzewa były takie same.
+          </p>
+          <p>
+            Algorytm, który używa React w celu uaktualnienia natywnego DOM, nazywany jest po angielsku reconciliation, co można przetłumaczyć jako
+            pojednanie.
+          </p>
+        </>
       ),
       type: "React",
     },
@@ -966,18 +1007,20 @@ export const data = {
       id: 15,
       title: "Czym się różni komponent od elementu?",
       body: (
-        <p>
-          Komponent jest to funkcja albo klasa dziedzicząca po React.Component, która ma jakąś logikę lub/i zawiera inne komponenty oraz elementy.
-          Natomiast element jest to obiekt, który ma swój odpowiednik w DOM np. div, span albo input.
-          <br />
-          <br />
-          Jest to jednak uproszczenie myślowe ponieważ sam React nie używa DOM dopiero dodatkowa biblioteka ReactDOM dodaje taką możliwość, jednak nie
-          ma wątpliwości że Elementem będzie także Web Komponentem, ponieważ on także będzie miał swój odpowiednik w DOM.
-          <br />
-          <br />
-          Elementy występują tylko w JSX, w wynikowym JavaScript-cie zostają zastąpione przez wywołanie funkcji React.createElement, gdzie pierwszy
-          argument to nazwa taga.
-        </p>
+        <>
+          <p>
+            Komponent jest to funkcja albo klasa dziedzicząca po React.Component, która ma jakąś logikę lub/i zawiera inne komponenty oraz elementy.
+            Natomiast element jest to obiekt, który ma swój odpowiednik w DOM np. div, span albo input.
+          </p>
+          <p>
+            Jest to jednak uproszczenie myślowe ponieważ sam React nie używa DOM dopiero dodatkowa biblioteka ReactDOM dodaje taką możliwość, jednak
+            nie ma wątpliwości że Elementem będzie także Web Komponentem, ponieważ on także będzie miał swój odpowiednik w DOM.
+          </p>
+          <p>
+            Elementy występują tylko w JSX, w wynikowym JavaScript-cie zostają zastąpione przez wywołanie funkcji React.createElement, gdzie pierwszy
+            argument to nazwa taga.
+          </p>
+        </>
       ),
       type: "React",
     },
@@ -985,14 +1028,16 @@ export const data = {
       id: 16,
       title: "Do czego służy setState?",
       body: (
-        <p>
-          Metoda ta służy do zmiany wewnętrznego stanu komponentu, samo przypisanie do this.state nowego stanu albo zmiana wartości jednej z jego
-          właściwości nie sprawi, że komponent się re-renderuje.
-          <br />
-          <br />
-          Stan komponentu najczęściej stosuje się gdy nie potrzebujemy wysyłać go na zewnątrz komponentu. W przeciwnym przypadku raczej trzeba by
-          zastosować Reduxa albo Context API.
-        </p>
+        <>
+          <p>
+            Metoda ta służy do zmiany wewnętrznego stanu komponentu, samo przypisanie do this.state nowego stanu albo zmiana wartości jednej z jego
+            właściwości nie sprawi, że komponent się re-renderuje.
+          </p>
+          <p>
+            Stan komponentu najczęściej stosuje się gdy nie potrzebujemy wysyłać go na zewnątrz komponentu. W przeciwnym przypadku raczej trzeba by
+            zastosować Reduxa albo Context API.
+          </p>
+        </>
       ),
       type: "React",
     },
