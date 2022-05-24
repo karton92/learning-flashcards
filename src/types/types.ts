@@ -8,18 +8,18 @@ export type FlashcardItem = {
 export type FlashcardsProps = {
   isFlipped: boolean;
   setFlipped: React.Dispatch<React.SetStateAction<boolean>>;
-  cardType: number;
+  cardType: string;
   card: FlashcardItem;
 };
 
 export type FlashcardsListProps = {
   data: FlashcardsData;
-  cardType: number;
-  setCardType: React.Dispatch<React.SetStateAction<number>>;
+  cardType: string;
+  setCardType: React.Dispatch<React.SetStateAction<string>>;
   setCard: any;
   isFlipped: boolean;
   setFlipped: React.Dispatch<React.SetStateAction<boolean>>;
-  isActive: number;
+  activeCardId: number;
   setActive: React.Dispatch<React.SetStateAction<number>>;
 };
 
@@ -28,10 +28,4 @@ export type FlashcardsData = {
   css: FlashcardItem[];
   html: FlashcardItem[];
   react: FlashcardItem[];
-};
-
-export type ListButtonProps = {
-  id: number;
-  title: string;
-  setCardType: React.Dispatch<React.SetStateAction<number>>;
 };
