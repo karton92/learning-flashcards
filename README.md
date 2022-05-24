@@ -33,8 +33,4 @@ _Below is how install and setting up app._
 5. Hooks<br>
 6. Material UI<br>
 7. Optimization Care<br>
-<br>
-<h2>In future:</h2>
-8. Redux Toolkit<br>
-9. Arrow navigation<br>
 
