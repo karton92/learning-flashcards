@@ -1,11 +1,24 @@
 import { useEffect, useState } from "react";
 import { FlashcardItem, FlashcardsListProps } from "../../types/types";
 import { listButtons } from "../../utils/questions";
-import Button from "../Button/Button";
+import ButtonList from "../Button/Button";
 import "./QuestionsList.scss";
+import { useMediaQuery } from "react-responsive";
+import Box from "@mui/material/Box";
+import Drawer from "@mui/material/Drawer";
+import Button from "@mui/material/Button";
 
 const QuestionsList = ({ data, cardType, setCardType, setCard, setFlipped, activeCardId, setActive }: FlashcardsListProps) => {
   const [flashcards, setFlashcards] = useState<FlashcardItem[]>(data.javascript);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const isMobile = useMediaQuery({ query: "(max-width: 650px)" });
+
+  const toggleDrawer = () => (event: { type?: string; key?: string }) => {
+    if (event && event.type === "keydown" && (event.key === "Tab" || event.key === "Shift")) {
+      return;
+    }
+    setIsDrawerOpen((prevState) => !prevState);
+  };
 
   const handleCardType = (cardType: string) => {
     switch (cardType) {
@@ -43,11 +56,39 @@ const QuestionsList = ({ data, cardType, setCardType, setCard, setFlipped, activ
     setActive(item.id);
   };
 
-  return (
+  return isMobile ? (
+    <div>
+      <Button id="button-list" onClick={toggleDrawer()}>
+        Lista pytań
+      </Button>
+      <Drawer anchor="top" open={isDrawerOpen} onClose={toggleDrawer()}>
+        <Box className="mobile-box" role="presentation" onClick={toggleDrawer()} onKeyDown={toggleDrawer()}>
+          <div className="list-container">
+            <div className="list-header">
+              {listButtons.map((item) => (
+                <ButtonList key={item} title={item} setCardType={setCardType} />
+              ))}
+            </div>
+            <div className="list-body">
+              <ul>
+                {flashcards.map((item) => (
+                  <li
+                    className={item.id === activeCardId ? "active" : ""}
+                    onClick={() => handleSingleCard(item)}
+                    key={item.id}
+                  >{`${item.id}. ${item.title}`}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </Box>
+      </Drawer>
+    </div>
+  ) : (
     <div className="list-container">
       <div className="list-header">
         {listButtons.map((item) => (
-          <Button key={item} title={item} setCardType={setCardType} />
+          <ButtonList key={item} title={item} setCardType={setCardType} />
         ))}
       </div>
       <div className="list-body">

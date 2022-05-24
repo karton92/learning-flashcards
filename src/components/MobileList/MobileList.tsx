@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
@@ -7,52 +7,34 @@ import QuestionsList from "../QuestionsList/QuestionsList";
 import "./MobileList.scss";
 
 const MobileList = ({ data, cardType, setCardType, setCard, isFlipped, setFlipped, activeCardId, setActive }: FlashcardsListProps) => {
-  const [state, setState] = useState({
-    top: false,
-  });
-  const anchor = "top";
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-  const toggleDrawer = (anchor: string, open: boolean) => (event: any) => {
+  const toggleDrawer = () => (event: { type?: string; key?: string }) => {
     if (event && event.type === "keydown" && (event.key === "Tab" || event.key === "Shift")) {
       return;
     }
-
-    setState({ ...state, [anchor]: open });
+    setIsDrawerOpen((prevState) => !prevState);
   };
-
-  const list = (anchor: string) => (
-    <Box
-      className="mobile-box"
-      sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
-      <QuestionsList
-        data={data}
-        cardType={cardType}
-        setCardType={setCardType}
-        setCard={setCard}
-        isFlipped={isFlipped}
-        setFlipped={setFlipped}
-        activeCardId={activeCardId}
-        setActive={setActive}
-      />
-    </Box>
-  );
 
   return (
     <div>
-      {
-        <React.Fragment key={anchor}>
-          <Button id="button-list" onClick={toggleDrawer(anchor, true)}>
-            Lista pytań
-          </Button>
-          <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
-            {list(anchor)}
-          </Drawer>
-        </React.Fragment>
-      }
+      <Button id="button-list" onClick={toggleDrawer()}>
+        Lista pytań
+      </Button>
+      <Drawer anchor="top" open={isDrawerOpen} onClose={toggleDrawer()}>
+        <Box className="mobile-box" role="presentation" onClick={toggleDrawer()} onKeyDown={toggleDrawer()}>
+          <QuestionsList
+            data={data}
+            cardType={cardType}
+            setCardType={setCardType}
+            setCard={setCard}
+            isFlipped={isFlipped}
+            setFlipped={setFlipped}
+            activeCardId={activeCardId}
+            setActive={setActive}
+          />
+        </Box>
+      </Drawer>
     </div>
   );
 };
