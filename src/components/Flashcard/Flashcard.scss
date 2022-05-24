@@ -1,4 +1,4 @@
-@use "../styles/" as *;
+@use "../../styles/" as *;
 
 .flipped {
   transform: rotateY(180deg);
@@ -18,6 +18,10 @@
 
 .react {
   background-image: $reactTheme;
+}
+
+.react {
+  background-image: $unknownTheme;
 }
 
 .card {
@@ -124,7 +128,7 @@
       background-color: $light;
       border: 5px solid #fff;
       object-fit: fill;
-      margin: 10px;
+      margin: 15px;
       @media (max-width: 426px) {
         width: 80px;
         height: 80px;
@@ -154,11 +158,12 @@
   .card-body {
     padding: 10px;
     height: 65vh;
+    max-height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
     margin-top: 2px;
     @media (max-width: 426px) {
-      height: 55vh;
+      max-height: 100%;
     }
     h3 {
       color: $font-color-dark;

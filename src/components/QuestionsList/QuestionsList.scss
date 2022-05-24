@@ -1,4 +1,4 @@
-@use "../styles/" as *;
+@use "../../styles/" as *;
 
 .list-container {
   width: 400px;
@@ -49,11 +49,12 @@
       list-style: none;
     }
     li {
+      font-size: 18px;
       margin: 10px 20px;
       text-decoration: none;
       cursor: pointer;
       &:hover {
-        font-weight: 700;
+        text-decoration: underline;
       }
     }
 

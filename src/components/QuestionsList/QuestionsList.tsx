@@ -1,38 +1,27 @@
 import { useEffect, useState } from "react";
-import { FlashcardItem, FlashcardsListProps } from "../types/types";
-import { listButtons } from "../utils/data";
-import Button from "./Button";
+import { FlashcardItem, FlashcardsListProps } from "../../types/types";
+import { listButtons } from "../../utils/questions";
+import Button from "../Button/Button";
 import "./QuestionsList.scss";
 
-const QuestionsList = ({
-  data,
-  cardType,
-  setCardType,
-  setCard,
-  setFlipped,
-  isActive,
-  setActive,
-}: FlashcardsListProps) => {
-  const [flashcards, setFlashcards] = useState<FlashcardItem[]>(
-    data.javascript
-  );
+const QuestionsList = ({ data, cardType, setCardType, setCard, setFlipped, activeCardId, setActive }: FlashcardsListProps) => {
+  const [flashcards, setFlashcards] = useState<FlashcardItem[]>(data.javascript);
 
-  //CARDS HANDLE SECTION
-  const handleCardType = (cardNumber: number) => {
-    switch (cardNumber) {
-      case 0:
+  const handleCardType = (cardType: string) => {
+    switch (cardType) {
+      case "javascript":
         setFlashcards(data.javascript);
         setCard(data.javascript[0]);
         break;
-      case 1:
+      case "css":
         setFlashcards(data.css);
         setCard(data.css[0]);
         break;
-      case 2:
+      case "html":
         setFlashcards(data.html);
         setCard(data.html[0]);
         break;
-      case 3:
+      case "react":
         setFlashcards(data.react);
         setCard(data.react[0]);
         break;
@@ -48,25 +37,24 @@ const QuestionsList = ({
     handleCardType(cardType);
   }, [cardType]);
 
-  const handleSingleCard = (item: any) => {
+  const handleSingleCard = (item: FlashcardItem) => {
     setCard(item);
     setFlipped(false);
     setActive(item.id);
   };
-  //END CARDS HANDLE SECTION
 
   return (
     <div className="list-container">
       <div className="list-header">
-        {listButtons.map((item, index) => (
-          <Button id={index} title={item} setCardType={setCardType} />
+        {listButtons.map((item) => (
+          <Button key={item} title={item} setCardType={setCardType} />
         ))}
       </div>
       <div className="list-body">
         <ul>
-          {flashcards.map((item: any) => (
+          {flashcards.map((item) => (
             <li
-              className={item.id === isActive ? "active" : ""}
+              className={item.id === activeCardId ? "active" : ""}
               onClick={() => handleSingleCard(item)}
               key={item.id}
             >{`${item.id}. ${item.title}`}</li>

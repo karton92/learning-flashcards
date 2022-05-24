@@ -2,31 +2,18 @@ import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
-import { FlashcardsListProps } from "../types/types";
-import QuestionsList from "./QuestionsList";
+import { FlashcardsListProps } from "../../types/types";
+import QuestionsList from "../QuestionsList/QuestionsList";
 import "./MobileList.scss";
 
-const MobileList = ({
-  data,
-  cardType,
-  setCardType,
-  setCard,
-  isFlipped,
-  setFlipped,
-  isActive,
-  setActive,
-}: FlashcardsListProps) => {
+const MobileList = ({ data, cardType, setCardType, setCard, isFlipped, setFlipped, activeCardId, setActive }: FlashcardsListProps) => {
   const [state, setState] = useState({
     top: false,
   });
   const anchor = "top";
 
   const toggleDrawer = (anchor: string, open: boolean) => (event: any) => {
-    if (
-      event &&
-      event.type === "keydown" &&
-      (event.key === "Tab" || event.key === "Shift")
-    ) {
+    if (event && event.type === "keydown" && (event.key === "Tab" || event.key === "Shift")) {
       return;
     }
 
@@ -48,7 +35,7 @@ const MobileList = ({
         setCard={setCard}
         isFlipped={isFlipped}
         setFlipped={setFlipped}
-        isActive={isActive}
+        activeCardId={activeCardId}
         setActive={setActive}
       />
     </Box>
@@ -61,11 +48,7 @@ const MobileList = ({
           <Button id="button-list" onClick={toggleDrawer(anchor, true)}>
             Lista pytań
           </Button>
-          <Drawer
-            anchor={anchor}
-            open={state[anchor]}
-            onClose={toggleDrawer(anchor, false)}
-          >
+          <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
             {list(anchor)}
           </Drawer>
         </React.Fragment>
