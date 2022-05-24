@@ -73,6 +73,11 @@
     border: 5px solid #fff;
     object-fit: fill;
     margin: 10px;
+    @media (max-width: 426px) {
+      width: 140px;
+      height: 140px;
+      top: 45%;
+    }
   }
 
   h2 {
@@ -80,6 +85,9 @@
     font-size: 50px;
     padding: 5px;
     border-bottom: 3px solid white;
+    @media (max-width: 426px) {
+      font-size: 40px;
+    }
   }
 
   h3 {
@@ -128,7 +136,7 @@
       background-color: $light;
       border: 5px solid #fff;
       object-fit: fill;
-      margin: 15px;
+      margin: 5px;
       @media (max-width: 426px) {
         width: 80px;
         height: 80px;
@@ -149,7 +157,7 @@
         font-size: 28px;
       }
       @media (max-width: 376px) {
-        font-size: 24px;
+        font-size: 22px;
       }
     }
   }
@@ -170,14 +178,29 @@
       font-size: 24px;
       font-weight: 600;
       margin-bottom: 15px;
+      @media (max-width: 426px) {
+        font-size: 18px;
+      }
     }
 
     p {
       color: $font-color-dark;
       font-size: 18px;
+      margin: 10px 15px;
       line-height: 1.2;
       text-align: justify;
-      margin: 0 15px;
+      word-spacing: -2px;
+      @media (max-width: 426px) {
+        font-size: 14px;
+      }
+    }
+
+    li {
+      text-align: left;
+      margin: 10px 15px;
+      @media (max-width: 426px) {
+        font-size: 14px;
+      }
     }
 
     .code-example {

@@ -1,20 +1,20 @@
 import { useState } from "react";
 import "./App.scss";
 import Flashcard from "./components/Flashcard/Flashcard";
-import QuestionsList from "./components/QuestionsList/QuestionsList";
-import { data } from "./utils/questions";
+import ListContainer from "./components/ListContainer/ListContainer";
+import { data } from "./questions/questions";
 import { FlashcardItem } from "./types/types";
 
 const App = () => {
-  const [cardType, setCardType] = useState<string>("javascript");
+  const [cardType, setCardType] = useState("javascript");
   const [card, setCard] = useState<FlashcardItem>(data.javascript[0]);
-  const [isFlipped, setFlipped] = useState<boolean>(false);
-  const [active, setActive] = useState<number>(1);
+  const [isFlipped, setFlipped] = useState(false);
+  const [active, setActive] = useState(1);
 
   return (
     <div className="app-container">
       <Flashcard isFlipped={isFlipped} setFlipped={setFlipped} cardType={cardType} card={card} />
-      <QuestionsList
+      <ListContainer
         data={data}
         cardType={cardType}
         setCardType={setCardType}
