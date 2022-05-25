@@ -10,7 +10,7 @@ import QuestionsList from "../QuestionsList/QuestionsList";
 const ListContainer = ({ data, cardType, setCardType, setCard, setFlipped, activeCardId, setActive }: FlashcardsListProps) => {
   const [flashcards, setFlashcards] = useState<FlashcardItem[]>(data.javascript);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const isMobile = useMediaQuery({ query: "(max-width: 650px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 720px)" });
 
   const toggleDrawer = () => (event: { type?: string; key?: string }) => {
     if (event && event.type === "keydown" && (event.key === "Tab" || event.key === "Shift")) {

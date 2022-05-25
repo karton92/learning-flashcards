@@ -15,11 +15,16 @@ body {
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
-  @media (max-width: 500px) {
+  @media (max-width: 720px) {
     flex-direction: column;
     h1 {
       width: 100%;
       font-size: 24px;
+    }
+  }
+  @media (max-width: 300px) {
+    h1 {
+      font-size: 18px;
     }
   }
   h1 {

@@ -35,9 +35,9 @@
   cursor: pointer;
   position: relative;
   @media (max-width: 900px) {
-    max-width: 45%;
+    max-width: 320px;
   }
-  @media (max-width: 650px) {
+  @media (max-width: 720px) {
     order: 2;
     max-width: 80vw;
     max-height: 80vh;
@@ -133,17 +133,13 @@
     }
     img {
       display: block;
-      width: 100px;
-      height: 100px;
+      width: 80px;
+      height: 80px;
       border-radius: 50%;
       background-color: $light;
       border: 5px solid #fff;
       object-fit: fill;
       margin: 5px;
-      @media (max-width: 426px) {
-        width: 80px;
-        height: 80px;
-      }
       @media (max-width: 321px) {
         width: 60px;
         height: 60px;
