@@ -38,25 +38,25 @@ function Flashcard({ isFlipped, setFlipped, card, cardType }: FlashcardsProps) {
   };
 
   return (
-    <div onClick={() => setFlipped(!isFlipped)} className={`card ${isFlipped ? "flipped" : ""}`}>
-      <div className={`card-face card-front ${handleCardClass(cardType)}`}>
+    <main onClick={() => setFlipped(!isFlipped)} className={`card ${isFlipped ? "flipped" : ""}`}>
+      <section className={`card-face card-front ${handleCardClass(cardType)}`}>
         <h2>{card.type}</h2>
         <h3>{card.title}</h3>
         <img src={getLangIconSrc(cardType)} alt={`Icon for ${cardType}`} />
-      </div>
-      <div className="card-face card-back">
+      </section>
+      <section className="card-face card-back">
         <div className="card-content">
-          <div className={`card-header ${handleCardClass(cardType)}`}>
+          <header className={`card-header ${handleCardClass(cardType)}`}>
             <img src={getLangIconSrc(cardType)} alt={`Icon for ${cardType}`} />
             <h2>{card.type}</h2>
-          </div>
+          </header>
           <div className="card-body">
             <h3>{card.title}</h3>
-            <>{card.body}</>
+            <article>{card.body}</article>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
 

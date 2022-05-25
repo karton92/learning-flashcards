@@ -13,13 +13,13 @@ type QuestionsListContainerProps = {
 
 const QuestionsList = ({ flashcards, setCardType, handleSingleCard, activeCardId }: QuestionsListContainerProps) => {
   return (
-    <div className="list-container">
-      <div className="list-header">
+    <aside className="list-container">
+      <header className="list-header">
         {listButtons.map((item) => (
           <Button key={item} title={item} setCardType={setCardType} />
         ))}
-      </div>
-      <div className="list-body">
+      </header>
+      <section className="list-body">
         <ul>
           {flashcards.map((item: { id: number; title: string }) => (
             <li
@@ -29,8 +29,8 @@ const QuestionsList = ({ flashcards, setCardType, handleSingleCard, activeCardId
             >{`${item.id}. ${item.title}`}</li>
           ))}
         </ul>
-      </div>
-    </div>
+      </section>
+    </aside>
   );
 };
 

@@ -13,6 +13,7 @@ const App = () => {
 
   return (
     <div className="app-container">
+      <h1>What is your knowledge?</h1>
       <Flashcard isFlipped={isFlipped} setFlipped={setFlipped} cardType={cardType} card={card} />
       <ListContainer
         data={data}
