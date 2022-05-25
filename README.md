@@ -1,4 +1,4 @@
-<img src="/readme_view.jpg" alt="Site view" width="70%">
+<img src="/readme_view.jpg" alt="Site view" width="100%">
 <h2>Learning Flashcards App</h2>
 
 _Welcome to my profile!<br>
