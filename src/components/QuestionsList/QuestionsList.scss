@@ -2,10 +2,14 @@
 
 .list-container {
   width: 400px;
-  height: 90vh;
+  height: 100%;
+  max-height: 80vh;
   margin: 20px;
   box-shadow: $boxShadow;
   border-radius: $mainBorderRadius;
+  @media (max-width: 900px) {
+    max-width: 45%;
+  }
   @media (max-width: 426px) {
     height: 60vh;
     width: 100%;
@@ -23,7 +27,7 @@
     background-color: $listHeaderBGColor;
     border-top-left-radius: $mainBorderRadius;
     border-top-right-radius: $mainBorderRadius;
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
       height: auto;
       flex-wrap: wrap;
     }

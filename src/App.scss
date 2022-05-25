@@ -1,5 +1,11 @@
 @use "./styles/" as *;
 
+body {
+  font-size: $font-size;
+  width: 100vw;
+  min-height: 100vh;
+}
+
 .app-container {
   width: 100vw;
   height: 100vh;
@@ -8,13 +14,15 @@
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  @media (max-width: 650px) {
+  flex-wrap: wrap;
+  @media (max-width: 500px) {
     flex-direction: column;
+    h1 {
+      width: 100%;
+      font-size: 24px;
+    }
   }
-}
-
-body {
-  font-size: $font-size;
-  width: 100vw;
-  min-height: 100vh;
+  h1 {
+    width: 100vw;
+  }
 }
